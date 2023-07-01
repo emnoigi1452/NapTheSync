@@ -1,0 +1,32 @@
+name: NapTheSync
+version: 1.1-dev
+api-version: 1.13
+description: Synchronize offline donations with your Spigot server!
+main: me.stella.Front.FrontEndBoot
+authors: [Crush_Seul, StellarSeal]
+soft-depend: [PlaceholderAPI]
+commands:
+  napthesync:
+    description: The main command of the plugin
+    usage: /napthesync
+permissions:
+  napthesync.admin:
+    description: An administrative node for all other permissions
+    default: op
+    children:
+      napthesync.sync.donation: true
+      napthesync.utils.history: true
+      napthesync.utils.help: true
+      napthesync.utils.reload: true
+  napthesync.sync.donation:
+    description: Synchronizes a donation to await for the player to login
+    default: false
+  napthesync.utils.help:
+    description: Display the help messages
+    default: op
+  napthesync.utils.history:
+    description: Show the donation history of a player
+    default: false
+  napthesync.utils.reload:
+    description: Reload the configurations
+    default: false
