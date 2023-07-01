@@ -7,3 +7,7 @@
 
 # Usage
 * This repository is for backup purposes only.
+
+# Plugin dependencies
+* TheSieuToc (I hard coded this plugin as a dependency because of how I originally planned to use it)
+* PlaceholderAPI (Support a few simple placeholders)
